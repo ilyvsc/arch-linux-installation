@@ -150,4 +150,4 @@ function extractPorts(){
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # Poetry configuration
-PATH="~/.local/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
