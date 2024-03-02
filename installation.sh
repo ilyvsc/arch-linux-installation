@@ -107,7 +107,7 @@ function install_dev() {
     curl -sSL https://install.python-poetry.org | python3 -
 
     if [ "$confirm" == "Y" ] || [ "$confirm" == "y" ]; then
-        paru -S jetbrains-toolbox clion clion-jre datagrip datagrip-jre github-cli --noconfirm
+        paru -S jetbrains-toolbox github-cli --noconfirm
         sudo pacman -S tree htop neofetch python python-pip --noconfirm
 
         echo "Development tools installed successfully."
@@ -119,6 +119,7 @@ function install_dev() {
 function install_desktop(){
     # Install desktop environment
     pacman -S gnome xorg-xprop gnome-{tweaks,browser-connector,shell-extensions} --noconfirm
+    paru -S extension-manager-git --noconfirm
     systemctl enable gdm; systemctl start gdm
 }
 
