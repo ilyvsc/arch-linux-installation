@@ -118,7 +118,7 @@ function install_dev() {
 
 function install_desktop(){
     # Install desktop environment
-    pacman -S gnome gnome-{tweaks,browser-connector,shell-extensions} --noconfirm
+    pacman -S gnome xorg-xprop gnome-{tweaks,browser-connector,shell-extensions} --noconfirm
     systemctl enable gdm; systemctl start gdm
 }
 
