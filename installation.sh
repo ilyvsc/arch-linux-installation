@@ -43,7 +43,7 @@ function install_environment() {
     paru -Syu --noconfirm
 
     # Install blackarch keyrings
-    wget -o ~/.repos/strap.sh https://blackarch.org/strap.sh; chmod +x strap.sh; ./strap.sh
+    wget -o ~/.repos/strap.sh https://blackarch.org/strap.sh; chmod +x strap.sh; sudo ./strap.sh
 }
 
 function install_fonts() {
